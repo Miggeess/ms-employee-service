@@ -1,0 +1,166 @@
+openapi: 3.0.1
+info:
+  title: ms-employee-service
+  description: API para gestión de empleados
+  version: 1.0.0
+servers:
+  - url: http://localhost:8080
+
+paths:
+  /api/v1/employee:
+    get:
+      summary: Obtener todos los empleados
+      responses:
+        '200':
+          description: Lista de empleados
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EmployeeDataResponse'
+
+    post:
+      summary: Crear múltiples empleados
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ListEmployeeRequest'
+            example:
+              employees:
+                - firstName: Juan
+                  middleName: Angel
+                  lastName: Perez
+                  secondLastName: Mejia
+                  age: 35
+                  gender: M
+                  birthDate: 1991-05-04
+                  position: Senior Java Developer
+      responses:
+        '200':
+          description: Empleados creados
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/EmployeeDataResponse'
+        '400':
+          description: Error de validación
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiError'
+
+  /api/v1/employee/{id}:
+    put:
+      summary: Actualizar empleado por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmployeeRequest'
+            example:
+              firstName: Roberto
+              middleName: null
+              lastName: Antunez
+              secondLastName: null
+              age: 25
+              gender: H
+              birthDate: 2001-08-14
+              position: Construccion
+      responses:
+        '200':
+          description: Empleado actualizado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmployeeDataResponse'
+
+    delete:
+      summary: Eliminar empleado por ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Empleado eliminado
+
+components:
+  schemas:
+    ListEmployeeRequest:
+      type: object
+      properties:
+        employees:
+          type: array
+          items:
+            $ref: '#/components/schemas/EmployeeRequest'
+      required:
+        - employees
+
+    EmployeeRequest:
+      type: object
+      properties:
+        firstName:
+          type: string
+          nullable: true
+        middleName:
+          type: string
+          nullable: true
+        lastName:
+          type: string
+        secondLastName:
+          type: string
+          nullable: true
+        age:
+          type: integer
+        gender:
+          type: string
+        birthDate:
+          type: string
+          format: date
+        position:
+          type: string
+      required:
+        - lastName
+        - age
+        - gender
+        - birthDate
+        - position
+
+    EmployeeDataResponse:
+      type: object
+      properties:
+        id:
+          type: integer
+        firstName:
+          type: string
+        lastName:
+          type: string
+        position:
+          type: string
+
+    ApiError:
+      type: object
+      properties:
+        message:
+          type: string
+        path:
+          type: string
+        status:
+          type: integer
+        timestamp:
+          type: string
+          format: date-time

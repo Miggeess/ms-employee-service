@@ -1,10 +1,7 @@
 package com.babel.employeeservice.infrastructure.adapter.in.web;
 
 import com.babel.employeeservice.application.port.EmployeeUseCase;
-import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeDataResponse;
-import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeRequest;
-import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeGeneralResponse;
-import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeResponse;
+import com.babel.employeeservice.infrastructure.adapter.in.dto.*;
 import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,10 +23,10 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<EmployeeDataResponse> addEmployee(@Valid @RequestBody EmployeeRequest employeeRequest){
+    public ResponseEntity<List<EmployeeDataResponse>> addAllEmployee(@RequestBody @Valid ListEmployeeRequest employeeRequest){
         LOG.info("Entered POST - /api/v1/employee in EmployeeController");
 
-        return ResponseEntity.ok(employeeUseCase.addEmployee(employeeRequest));
+        return ResponseEntity.ok(employeeUseCase.addAllEmployee(employeeRequest.getEmployees()));
     }
 
     @GetMapping

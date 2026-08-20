@@ -11,7 +11,7 @@ public interface EmployeeUseCase {
 
     List<EmployeeDataResponse> getAllEmployee();
 
-    EmployeeDataResponse addEmployee(EmployeeRequest employeeRequest);
+    List<EmployeeDataResponse> addAllEmployee(List<EmployeeRequest> employeeRequest);
 
     EmployeeResponse<EmployeeGeneralResponse> deleteEmployee(Long id);
 

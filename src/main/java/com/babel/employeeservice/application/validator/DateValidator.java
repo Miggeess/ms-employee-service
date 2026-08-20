@@ -1,7 +1,5 @@
 package com.babel.employeeservice.application.validator;
 
-import com.babel.employeeservice.domain.exception.InvalidDateFormatException;
-
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 
@@ -11,11 +9,12 @@ public final class DateValidator {
 
     private DateValidator(){}
 
-    public static void validateAndParse(String date){
+    public static boolean validateAndParse(String date){
         try {
             LocalDate.parse(date, FORMATTER_DD_MM_YYYY);
+            return true;
         } catch (DateTimeParseException ex){
-            throw new InvalidDateFormatException("birthdate mus follow format dd-mm-yyyy");
+            return false;
         }
     }
 }

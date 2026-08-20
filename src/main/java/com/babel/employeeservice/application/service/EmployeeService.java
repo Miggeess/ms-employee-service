@@ -2,6 +2,7 @@ package com.babel.employeeservice.application.service;
 
 import com.babel.employeeservice.application.port.EmployeeUseCase;
 import com.babel.employeeservice.application.validator.DateValidator;
+import com.babel.employeeservice.domain.exception.InvalidDateFormatException;
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeDataResponse;
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeRequest;
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeGeneralResponse;
@@ -40,10 +41,19 @@ public class EmployeeService implements EmployeeUseCase {
     }
 
     @Override
-    public EmployeeDataResponse addEmployee(EmployeeRequest employeeRequest) {
-        LOG.info("Entered POST - /api/v1/employee in EmployeeService - addEmployee init");
-        DateValidator.validateAndParse(employeeRequest.birthDate());
-        return employeeMapper.toModel(employeeRepository.save(employeeMapper.toEntity(employeeRequest)));
+    public List<EmployeeDataResponse> addAllEmployee(List<EmployeeRequest> employeeRequest) {
+        LOG.info("Entered POST - /api/v1/employee in EmployeeService - addAllEmployee init");
+
+        return employeeRequest.stream()
+                .map(employee -> {
+                    if(!DateValidator.validateAndParse(employee.birthDate())){
+                        throw new InvalidDateFormatException("birthdate mus follow format dd-mm-yyyy");
+                    }
+                    return employee;
+                })
+                .map(employeeMapper::toEntity)
+                .map(employeeRepository::save)
+                .map(employeeMapper::toModel).collect(Collectors.toList());
     }
 
     @Override
