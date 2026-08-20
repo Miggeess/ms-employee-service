@@ -1,0 +1,659 @@
+2026-08-19 19:35:44.191 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 14308 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 19:35:44.202 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 19:35:54.301 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 19:35:54.302 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 19:35:56.658 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 19:35:56.892 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 19:35:59.386 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 19:36:00.358 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 19:36:00.365 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 19:36:00.637 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 19:36:04.152 INFO  [main] org.hibernate.orm.core - HHH000182: No default (no-argument) constructor for class [com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity] (class must be instantiated by Interceptor)
+2026-08-19 19:36:04.769 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 19:36:06.208 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 19:36:09.201 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 28.863 seconds (process running for 32.915)
+2026-08-19 19:36:56.889 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 19:38:08.165 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 19:38:08.298 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 19:38:12.267 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee finish
+2026-08-19 19:53:18.761 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 11952 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 19:53:18.809 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 19:53:26.512 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 19:53:26.513 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 19:53:28.888 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 19:53:29.492 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 19:53:32.544 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 19:53:33.494 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 19:53:33.499 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 19:53:33.728 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 19:53:37.168 INFO  [main] org.hibernate.orm.core - HHH000182: No default (no-argument) constructor for class [com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity] (class must be instantiated by Interceptor)
+2026-08-19 19:53:38.194 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 19:53:40.537 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 19:53:44.854 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 30.049 seconds (process running for 32.243)
+2026-08-19 19:54:01.051 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 19:54:01.815 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 19:54:01.816 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 19:54:16.852 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 19:54:16.853 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 19:55:16.195 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 19:55:16.196 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 19:55:22.906 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 19:55:22.908 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 19:55:23.111 ERROR [http-nio-8080-exec-5] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity'] with root cause
+org.hibernate.InstantiationException: No default constructor for entity 'com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity'
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:94)
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4398)
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1559)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.instantiateEntity(EntityInitializerImpl.java:1546)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance(EntityInitializerImpl.java:1538)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance2(EntityInitializerImpl.java:1497)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance1(EntityInitializerImpl.java:1390)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveInstance(EntityInitializerImpl.java:1286)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:661)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:530)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:88)
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:230)
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:137)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.read(ListResultsConsumer.java:245)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.readRows(ListResultsConsumer.java:235)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:164)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:31)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:213)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:136)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:484)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:411)
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:379)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153)
+	at org.hibernate.query.Query.getResultList(Query.java:121)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:412)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy2/jdk.proxy2.$Proxy118.findAll(Unknown Source)
+	at com.babel.employeeservice.application.service.EmployeeService.getAllEmployee(EmployeeService.java:31)
+	at com.babel.employeeservice.infrastructure.adapter.in.web.EmployeeController.getAllEmployees(EmployeeController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:633)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-08-19 19:58:21.848 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 15588 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 19:58:21.860 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 19:58:30.308 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 19:58:30.309 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 19:58:32.758 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 19:58:33.130 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 19:58:35.738 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 19:58:36.440 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 19:58:36.447 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 19:58:36.677 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 19:58:39.483 INFO  [main] org.hibernate.orm.core - HHH000182: No default (no-argument) constructor for class [com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity] (class must be instantiated by Interceptor)
+2026-08-19 19:58:40.162 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 19:58:41.878 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 19:58:44.695 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 25.85 seconds (process running for 27.692)
+2026-08-19 19:59:01.596 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 19:59:03.632 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 19:59:03.639 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 19:59:17.647 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 19:59:17.650 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 19:59:27.320 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 19:59:27.321 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 19:59:27.356 ERROR [http-nio-8080-exec-4] o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.orm.jpa.JpaSystemException: No default constructor for entity 'com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity'] with root cause
+org.hibernate.InstantiationException: No default constructor for entity 'com.babel.employeeservice.infrastructure.adapter.out.entity.EmployeeEntity'
+	at org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate(EntityInstantiatorPojoStandard.java:94)
+	at org.hibernate.persister.entity.AbstractEntityPersister.instantiate(AbstractEntityPersister.java:4398)
+	at org.hibernate.internal.SessionImpl.instantiate(SessionImpl.java:1559)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.instantiateEntity(EntityInitializerImpl.java:1546)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance(EntityInitializerImpl.java:1538)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance2(EntityInitializerImpl.java:1497)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveEntityInstance1(EntityInitializerImpl.java:1390)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveInstance(EntityInitializerImpl.java:1286)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:661)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:530)
+	at org.hibernate.sql.results.graph.entity.internal.EntityInitializerImpl.resolveKey(EntityInitializerImpl.java:88)
+	at org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers(StandardRowReader.java:230)
+	at org.hibernate.sql.results.internal.StandardRowReader.readRow(StandardRowReader.java:137)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.read(ListResultsConsumer.java:245)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.readRows(ListResultsConsumer.java:235)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:164)
+	at org.hibernate.sql.results.spi.ListResultsConsumer.consume(ListResultsConsumer.java:31)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery(JdbcSelectExecutorStandardImpl.java:213)
+	at org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery(JdbcSelectExecutorStandardImpl.java:100)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.executeQuery(JdbcSelectExecutor.java:63)
+	at org.hibernate.sql.exec.spi.JdbcSelectExecutor.list(JdbcSelectExecutor.java:137)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$1(ConcreteSqmSelectQueryPlan.java:136)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation(ConcreteSqmSelectQueryPlan.java:484)
+	at org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList(ConcreteSqmSelectQueryPlan.java:411)
+	at org.hibernate.query.sqm.internal.SqmQueryImpl.doList(SqmQueryImpl.java:379)
+	at org.hibernate.query.spi.AbstractSelectionQuery.list(AbstractSelectionQuery.java:153)
+	at org.hibernate.query.Query.getResultList(Query.java:121)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll(SimpleJpaRepository.java:412)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:278)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:169)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:545)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:290)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:690)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:171)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:146)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:133)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:371)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:130)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:135)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:166)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:222)
+	at jdk.proxy2/jdk.proxy2.$Proxy118.findAll(Unknown Source)
+	at com.babel.employeeservice.application.service.EmployeeService.getAllEmployee(EmployeeService.java:32)
+	at com.babel.employeeservice.infrastructure.adapter.in.web.EmployeeController.getAllEmployees(EmployeeController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:633)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:1272)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1801)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2026-08-19 20:00:29.154 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 9228 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 20:00:29.245 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 20:00:37.947 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 20:00:37.949 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 20:00:40.125 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 20:00:40.532 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 20:00:43.015 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 20:00:44.029 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 20:00:44.047 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 20:00:44.404 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 20:00:48.286 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 20:00:50.659 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 20:00:52.967 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 26.742 seconds (process running for 28.637)
+2026-08-19 20:01:01.670 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 20:01:04.900 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:01:04.900 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:01:14.222 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 20:01:14.223 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 20:01:23.759 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:01:23.759 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:01:55.787 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 20:01:55.788 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 20:02:09.298 INFO  [http-nio-8080-exec-6] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:02:09.299 INFO  [http-nio-8080-exec-6] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:46:54.142 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 1224 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 20:46:54.307 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 20:47:06.291 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 20:47:06.292 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 20:47:13.927 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 20:47:14.362 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 20:47:19.524 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 20:47:20.649 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 20:47:20.658 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 20:47:21.114 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 20:47:35.968 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 20:47:40.294 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 20:47:45.996 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 57.163 seconds (process running for 61.708)
+2026-08-19 20:48:33.530 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 20:48:35.352 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 20:48:35.355 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 20:48:43.831 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:48:43.832 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:48:47.120 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:48:47.122 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:53:39.738 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 15956 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 20:53:39.748 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 20:53:47.671 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 20:53:47.673 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 20:53:49.732 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 20:53:49.993 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 20:53:52.261 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 20:53:53.181 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 20:53:53.188 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 20:53:53.425 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 20:53:57.447 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 20:53:59.264 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 20:54:02.021 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 25.702 seconds (process running for 27.884)
+2026-08-19 20:54:19.482 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 20:54:20.987 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 20:54:20.988 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 20:54:30.760 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:54:30.761 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:55:56.730 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 17372 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 20:55:56.764 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 20:56:06.025 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 20:56:06.026 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 20:56:08.014 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 20:56:08.627 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 20:56:11.567 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 20:56:12.545 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 20:56:12.552 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 20:56:12.812 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 20:56:16.982 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 20:56:19.087 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 20:56:22.205 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 28.671 seconds (process running for 30.439)
+2026-08-19 20:56:32.139 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 20:56:36.695 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 20:56:36.696 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 20:56:56.414 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 20:56:56.415 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 20:57:04.196 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered DELETE - /api/v1/employee/{id} in EmployeeController
+2026-08-19 20:57:04.198 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered DELETE - /api/v1/employee/{id} in EmployeeService - deleteEmployee init
+2026-08-19 21:24:52.444 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 11956 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 21:24:52.465 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 21:24:58.681 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 21:24:58.682 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 21:25:00.245 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 21:25:00.693 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 21:25:04.644 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 21:25:05.889 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 21:25:05.897 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 21:25:06.173 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 21:25:11.900 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 21:25:18.522 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 21:25:23.052 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 33.769 seconds (process running for 35.606)
+2026-08-19 21:27:20.718 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 21:27:22.755 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:27:22.758 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:27:32.295 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:27:32.296 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:28:40.615 INFO  [http-nio-8080-exec-6] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:28:40.616 INFO  [http-nio-8080-exec-6] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:29:01.014 INFO  [http-nio-8080-exec-7] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:29:01.017 INFO  [http-nio-8080-exec-7] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:29:36.347 INFO  [http-nio-8080-exec-8] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:29:36.348 INFO  [http-nio-8080-exec-8] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:30:13.791 INFO  [http-nio-8080-exec-9] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:30:13.792 INFO  [http-nio-8080-exec-9] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:30:25.063 INFO  [http-nio-8080-exec-10] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:30:25.064 INFO  [http-nio-8080-exec-10] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:36:23.357 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 17020 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 21:36:23.371 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 21:36:31.831 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 21:36:31.831 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 21:36:34.401 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 21:36:34.942 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 21:36:37.404 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 21:36:38.123 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 21:36:38.131 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 21:36:38.342 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 21:36:41.990 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 21:36:43.827 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 21:36:49.279 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 29.25 seconds (process running for 31.029)
+2026-08-19 21:37:12.947 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 21:37:14.096 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:37:14.097 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:38:04.869 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:38:04.870 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:38:19.878 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:38:19.881 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:39:22.864 INFO  [http-nio-8080-exec-7] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:39:22.865 INFO  [http-nio-8080-exec-7] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:39:46.349 INFO  [http-nio-8080-exec-8] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:39:46.351 INFO  [http-nio-8080-exec-8] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:39:57.368 INFO  [http-nio-8080-exec-9] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:39:57.369 INFO  [http-nio-8080-exec-9] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:40:12.783 INFO  [http-nio-8080-exec-10] c.b.e.i.a.in.web.EmployeeController - Entered DELETE - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:40:12.787 INFO  [http-nio-8080-exec-10] c.b.e.a.service.EmployeeService - Entered DELETE - /api/v1/employee/{id} in EmployeeService - deleteEmployee init
+2026-08-19 21:40:17.497 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:40:17.498 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:40:21.220 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:40:21.221 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:40:26.768 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:40:26.780 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:40:37.241 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:40:37.243 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:40:48.978 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered DELETE - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:40:48.978 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered DELETE - /api/v1/employee/{id} in EmployeeService - deleteEmployee init
+2026-08-19 21:40:56.226 INFO  [http-nio-8080-exec-6] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:40:56.227 INFO  [http-nio-8080-exec-6] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:41:00.188 INFO  [http-nio-8080-exec-7] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:41:00.189 INFO  [http-nio-8080-exec-7] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:44:42.353 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 6720 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 21:44:42.365 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 21:44:55.457 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 21:44:55.459 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 21:45:00.273 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 21:45:00.847 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 21:45:03.434 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 21:45:04.325 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 21:45:04.337 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 21:45:04.691 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 21:45:08.407 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 21:45:10.099 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 21:45:12.994 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 35.673 seconds (process running for 40.338)
+2026-08-19 21:49:00.513 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 21:49:03.000 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:49:03.000 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:50:46.833 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:50:46.839 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:50:57.568 INFO  [http-nio-8080-exec-6] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:50:57.569 INFO  [http-nio-8080-exec-6] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:52:47.588 INFO  [http-nio-8080-exec-9] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:52:47.590 INFO  [http-nio-8080-exec-9] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:53:10.295 INFO  [http-nio-8080-exec-10] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:53:10.298 INFO  [http-nio-8080-exec-10] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:53:30.493 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered DELETE - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:53:30.494 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered DELETE - /api/v1/employee/{id} in EmployeeService - deleteEmployee init
+2026-08-19 21:53:42.402 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:53:42.403 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:56:12.476 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 15560 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 21:56:12.573 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 21:56:22.679 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 21:56:22.680 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 21:56:27.489 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 21:56:27.968 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 21:56:31.649 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 21:56:33.175 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 21:56:33.204 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 21:56:33.829 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 21:56:38.848 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 21:56:42.531 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 21:56:47.289 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 38.119 seconds (process running for 39.775)
+2026-08-19 21:57:01.901 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 21:57:04.195 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 21:57:04.196 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 21:57:12.865 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 21:57:12.869 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 21:57:32.429 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:57:32.431 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:57:44.816 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 21:57:44.817 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 21:58:51.058 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 16964 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 21:58:51.072 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 21:59:00.658 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 21:59:00.660 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 21:59:02.545 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 21:59:02.807 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 21:59:05.543 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 21:59:06.342 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 21:59:06.351 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 21:59:06.564 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 21:59:10.089 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 21:59:12.045 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 21:59:14.796 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 26.495 seconds (process running for 28.242)
+2026-08-19 22:00:16.286 INFO  [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 22:00:17.589 INFO  [http-nio-8080-exec-2] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 22:00:17.590 INFO  [http-nio-8080-exec-2] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 22:00:33.109 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 22:00:33.112 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 22:03:24.981 INFO  [main] c.b.e.EmployeeserviceApplication - Starting EmployeeserviceApplication using Java 17.0.20.1 with PID 7436 (C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service\build\classes\java\main started by nan_1 in C:\Users\nan_1\Downloads\IntelliJMicroservicios\ms-employee-service)
+2026-08-19 22:03:25.056 INFO  [main] c.b.e.EmployeeserviceApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-19 22:03:32.681 INFO  [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-19 22:03:32.682 INFO  [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.22]
+2026-08-19 22:03:34.425 INFO  [main] org.hibernate.orm.jpa - HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-08-19 22:03:34.703 INFO  [main] org.hibernate.orm.core - HHH000001: Hibernate ORM core version 7.4.1.Final
+2026-08-19 22:03:37.068 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-19 22:03:37.693 INFO  [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:demo user=SA
+2026-08-19 22:03:37.699 INFO  [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-19 22:03:37.914 INFO  [main] o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:demo]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: DEMO/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-08-19 22:03:41.525 INFO  [main] org.hibernate.orm.core - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-19 22:03:43.178 WARN  [main] o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-19 22:03:45.878 INFO  [main] c.b.e.EmployeeserviceApplication - Started EmployeeserviceApplication in 23.74 seconds (process running for 25.493)
+2026-08-19 22:04:51.862 INFO  [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-19 22:04:53.133 INFO  [http-nio-8080-exec-1] c.b.e.i.a.in.web.EmployeeController - Entered POST - /api/v1/employee in EmployeeController
+2026-08-19 22:04:53.134 INFO  [http-nio-8080-exec-1] c.b.e.a.service.EmployeeService - Entered POST - /api/v1/employee in EmployeeService - addEmployee init
+2026-08-19 22:05:00.550 INFO  [http-nio-8080-exec-3] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 22:05:00.551 INFO  [http-nio-8080-exec-3] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 22:05:39.263 INFO  [http-nio-8080-exec-4] c.b.e.i.a.in.web.EmployeeController - Entered PUT - /api/v1/employee/{id} in EmployeeController
+2026-08-19 22:05:39.264 INFO  [http-nio-8080-exec-4] c.b.e.a.service.EmployeeService - Entered PUT - /api/v1/employee/{id} in EmployeeController - putEmployee init
+2026-08-19 22:05:55.136 INFO  [http-nio-8080-exec-5] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 22:05:55.137 INFO  [http-nio-8080-exec-5] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
+2026-08-19 22:06:04.393 INFO  [http-nio-8080-exec-6] c.b.e.i.a.in.web.EmployeeController - Entered DELETE - /api/v1/employee/{id} in EmployeeController
+2026-08-19 22:06:04.393 INFO  [http-nio-8080-exec-6] c.b.e.a.service.EmployeeService - Entered DELETE - /api/v1/employee/{id} in EmployeeService - deleteEmployee init
+2026-08-19 22:06:09.852 INFO  [http-nio-8080-exec-7] c.b.e.i.a.in.web.EmployeeController - Entered GET - /api/v1/employee in EmployeeController
+2026-08-19 22:06:09.853 INFO  [http-nio-8080-exec-7] c.b.e.a.service.EmployeeService - Entered GET - /api/v1/employee in EmployeeService - getAllEmployee init
