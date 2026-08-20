@@ -32,7 +32,7 @@ public class EmployeeEntity {
 
     private String gender;
 
-    private LocalDate birthDate;
+    private String birthDate;
 
     private String position;
 }

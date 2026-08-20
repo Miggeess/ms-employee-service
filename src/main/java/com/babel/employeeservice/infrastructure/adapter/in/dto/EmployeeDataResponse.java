@@ -10,6 +10,6 @@ public record EmployeeDataResponse(
         String secondLastName,
         Integer age,
         String gender,
-        LocalDate birthDate,
+        String birthDate,
         String position) {
 }

@@ -5,6 +5,7 @@ import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeDataRespo
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeRequest;
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeGeneralResponse;
 import com.babel.employeeservice.infrastructure.adapter.in.dto.EmployeeResponse;
+import jakarta.validation.Valid;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
@@ -25,7 +26,7 @@ public class EmployeeController {
     }
 
     @PostMapping
-    public ResponseEntity<EmployeeDataResponse> addEmployee(@RequestBody EmployeeRequest employeeRequest){
+    public ResponseEntity<EmployeeDataResponse> addEmployee(@Valid @RequestBody EmployeeRequest employeeRequest){
         LOG.info("Entered POST - /api/v1/employee in EmployeeController");
 
         return ResponseEntity.ok(employeeUseCase.addEmployee(employeeRequest));
