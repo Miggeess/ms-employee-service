@@ -45,7 +45,7 @@ public class EmployeeController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<EmployeeDataResponse> addEmployee(@PathVariable Long id, @RequestBody EmployeeRequest employeeRequest){
+    public ResponseEntity<EmployeeDataResponse> putEmployee(@PathVariable Long id, @RequestBody EmployeeRequest employeeRequest){
         LOG.info("Entered PUT - /api/v1/employee/{id} in EmployeeController");
 
         EmployeeResponse<EmployeeDataResponse> employeeResponse = employeeUseCase.putEmployee(id, employeeRequest);
